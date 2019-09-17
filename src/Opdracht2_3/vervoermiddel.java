@@ -1,4 +1,4 @@
-package Opdracht2;
+package Opdracht2_3;
 
 public class vervoermiddel {
 	private String merk;
