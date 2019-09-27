@@ -19,6 +19,7 @@ public class MainPanel extends JPanel{
 	JList<String> contactList = new JList<>(model);
 	JScrollPane listScrollPane = new JScrollPane(contactList);
 	
+	JButton delButton = new JButton("Reset");
 	JButton okButton = new JButton("OK");
 	
 	public MainPanel() {
@@ -31,6 +32,17 @@ public class MainPanel extends JPanel{
 				model.addElement("");
 			}
 		});
+		
+		delButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				voornaam.setText("");
+				achternaam.setText("");
+				model.clear();
+			}
+			
+		});
 		setLayout(null);
 		
 		add(v);
@@ -42,7 +54,10 @@ public class MainPanel extends JPanel{
 		a.setBounds(10,50,100,30);
 		add(achternaam);
 		achternaam.setBounds(110, 50, 100, 30);
-
+		
+	    add(delButton);
+		delButton.setBounds(10, 100, 100, 30);
+		    
 		add(okButton);
 	    okButton.setBounds(110, 100, 100, 30); 
 	   

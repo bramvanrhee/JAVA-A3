@@ -1,5 +1,10 @@
 package Eindopdracht2;
 
-public class main {
+import Eindopdracht2.MainWindow;
 
+public class Main {
+
+	public static void main(String[] args) {
+		MainWindow mainWindow = new MainWindow();
+	}
 }
