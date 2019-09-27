@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 public class MainWindow extends JFrame{
 	
 	public MainWindow() {
-		setSize(600, 500);
+		setSize(235, 500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setTitle("Hello World");
 		setContentPane(new MainPanel());
