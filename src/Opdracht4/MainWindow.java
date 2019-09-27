@@ -1,6 +1,6 @@
 package Opdracht4;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 
 public class MainWindow extends JFrame{
 	
